@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional: Set a background color */
+    font-family: cursive;
+    font-size: 14pt;
+}
+h1, p, #w3c{
+    text-align: center;
+}
+#puzzlearea {
+    margin: auto;
+    width:400px;
+    height:400px;
+    position: relative;
+}
+
+.tile {
+    width: 90px; /* Including the 5-pixel border on both sides */
+    height: 90px; /* Including the 5-pixel border on both top and bottom */
+    float:left;
+    border: 5px solid black;
+    box-sizing: border-box; /* Include borders in dimensions */
+    font-size: 18px; /* Adjust font size as needed for the content */
+    font-size: 40pt;
+    text-align: center;
+}
+.tile[data-number = '0']{
+    border: none;
+}
+
+.one      { background-position: 0      0;      }
+.two      { background-position: -100px 0;      }
+.three    { background-position: -200px 0;      }
+.four     { background-position: -300px 0;      }
+.five     { background-position: 0      -100px; }
+.six      { background-position: -100px -100px; }
+.seven    { background-position: -200px -100px; }
+.eight    { background-position: -300px -100px; }
+.nine     { background-position: 0      -200px; }
+.ten      { background-position: -100px -200px; }
+.eleven   { background-position: -200px -200px; }
+.twelve   { background-position: -300px -200px; }
+.thirteen { background-position: 0      -300px; }
+.fourteen { background-position: -100px -300px; }
+.fifteen  { background-position: -200px -300px; }
+
+
+.moveable {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
